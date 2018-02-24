@@ -1,0 +1,30 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+underscore@1.0.10
+accounts-password@1.5.0
+accounts-base@1.4.2
+jquery@1.11.10
+check@1.3.0
+audit-argument-checks@1.0.7
+iron:router
+themeteorchef:jquery-validation
+twbs:bootstrap
+browser-policy@1.1.0
+meteorhacks:npm
+
+
+npm-container
+themeteorchef:bert
+meteorhacks:ssr
+fourseven:scss@=4.5.4
+http@1.4.0
+standard-minifier-css
+standard-minifier-js
+shell-server
+dynamic-import
+tsega:bootstrap3-datetimepicker
+momentjs:moment

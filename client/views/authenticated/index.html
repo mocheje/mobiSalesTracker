@@ -1,0 +1,27 @@
+<template name="index">
+  <h1>Drivers</h1>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default"> <div class="panel-heading">Driver Lists</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Device ID </th>
+            <th>Driver Name</th>
+            <th>Personnel ID</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each drivers}}
+          <tr>
+            <th scope="row">{{@index}}</th>
+            <td>{{device}}</td>
+            <td>{{StaffName}}</td>
+            <td><a href="{{pathFor 'driver'}}"> {{StaffEmail}} </a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
