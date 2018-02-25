@@ -9,14 +9,13 @@ API = {
   },
   connection: function( request ) {
     var getRequestContents = API.utility.getRequestContents( request ),
-        apiKey             = getRequestContents.api_key,
+        apiKey             = API.utility.getApiKey(request),
         validUser          = API.authentication( apiKey );
 
     if ( validUser ) {
       // Now that we've validated our user, we make sure to scrap their API key
       // from the data we received. Next, we return a new object containing our
       // user's ID along with the rest of the data they sent.
-      delete getRequestContents.api_key;
       return { owner: validUser, data: getRequestContents };
     } else {
       return { error: 401, message: "Invalid API key." };
@@ -129,8 +128,8 @@ API = {
     locations: {
       POST: function( context, connection ) {
         // Make sure that our request has data and that the data is valid.
-        var hasData   = API.utility.hasData( connection.data ),
-          data = connection.data.data,
+        var data = connection.data,
+          hasData   = API.utility.hasData( data ),
           validData = API.utility.validate( data, [{ "longitude": Number, "latitude": Number, "speed": Number }]);
 
         if ( hasData && validData ) {
@@ -144,9 +143,29 @@ API = {
           API.utility.response( context, 403, { error: 403, message: "POST calls must have a latitude, longitude, and device passed in the request body in the correct formats." } );
         }
       }
+    },
+    drivers: {
+      GET: function( context, connection ) {
+        // Check to see if our request has any data. If it doesn't, we want to
+        // return all pizzas for the owner. If it does, we want to search for
+        // pizzas matching that query.
+        var hasQuery = API.utility.hasData( connection.data );
+        if ( hasQuery ) {
+          const email = connection.data.email;
+          if(email){
+            const driver = Driver.findOne({StaffEmail: email});
+            API.utility.response( context, 200, driver );
+          } else {
+            API.utility.response( context, 200, 'Driver not found' );
+          }
+        }
+      }
     }
   },
   utility: {
+    getApiKey: function(request){
+      return request.headers['x-api-key'];
+    },
     getRequestContents: function( request ) {
       switch( request.method ) {
         case "GET":

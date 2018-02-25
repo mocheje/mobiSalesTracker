@@ -4,3 +4,4 @@
 # Configuration
 settings-production.json
 npm-debug.log
+.deploy
