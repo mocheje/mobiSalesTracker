@@ -153,11 +153,40 @@ API = {
         if ( hasQuery ) {
           const email = connection.data.email;
           if(email){
-            const driver = Driver.findOne({StaffEmail: email});
+            const driver = Driver.find({StaffEmail: email}).fetch();
             API.utility.response( context, 200, driver );
           } else {
             API.utility.response( context, 200, 'Driver not found' );
           }
+        }
+      }
+    },
+    register_device: {
+      POST: function( context, connection ) {
+        // Make sure that our request has data and that the data is valid.
+        var data = connection.data,
+          hasData   = API.utility.hasData( data ),
+          validData = API.utility.validate( data, { "device": String, "email": String });
+
+        if ( hasData && validData ) {
+          console.log(data);
+         //modify driver and set device using email
+          const driver = Driver.findOne({device: data.device});
+          if(driver){
+            API.utility.response( context, 200, { "status": "received", "message": "Device belongs to another driver!. Please contact admin" } );
+          } else {
+            doc = Driver.findOne({StaffEmail: data.email});
+            if(doc){
+              doc.device = data.device;
+              const response = Driver.update({StaffEmail: data.email}, doc);
+              API.utility.response( context, 200, { "status": "received", response } );
+            } else {
+              API.utility.response( context, 403, { error: 403, message: "Driver not found. Please contact admin" } );
+            }
+          }
+
+        } else {
+          API.utility.response( context, 403, { error: 403, message: "Request payload must contain a valid device and driver as body content." } );
         }
       }
     }
