@@ -12,3 +12,14 @@ Meteor.publish( 'Drivers', function(){
 
   return this.ready();
 });
+
+Meteor.publish( 'Driver', function(id){
+  check(id, String);
+  var data = Driver.find({_id: id});
+
+  if ( data ) {
+    return data;
+  }
+
+  return this.ready();
+});

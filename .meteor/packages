@@ -28,3 +28,4 @@ shell-server
 dynamic-import
 tsega:bootstrap3-datetimepicker
 momentjs:moment
+dburles:google-maps

@@ -10,13 +10,14 @@ API = {
   connection: function( request ) {
     var getRequestContents = API.utility.getRequestContents( request ),
         apiKey             = API.utility.getApiKey(request),
+        device             = API.utility.getDeviceId(request),
         validUser          = API.authentication( apiKey );
 
     if ( validUser ) {
       // Now that we've validated our user, we make sure to scrap their API key
       // from the data we received. Next, we return a new object containing our
       // user's ID along with the rest of the data they sent.
-      return { owner: validUser, data: getRequestContents };
+      return { owner: validUser, data: getRequestContents, device: device|| 'unknown' };
     } else {
       return { error: 401, message: "Invalid API key." };
     }
@@ -129,12 +130,25 @@ API = {
       POST: function( context, connection ) {
         // Make sure that our request has data and that the data is valid.
         var data = connection.data,
-          hasData   = API.utility.hasData( data ),
-          validData = API.utility.validate( data, [{ "longitude": Number, "latitude": Number, "speed": Number }]);
+          device = connection.device,
+          hasData   = API.utility.hasData( data );
+          // validData = API.utility.validate( data, [{
+          //   "provider": String,
+          //   "time": Number,
+          //   "longitude": Number,
+          //   "latitude": Number,
+          //   "accuracy": Number,
+          //   "speed": Number,
+          //   "altitude": Number,
+          //   "bearing": Number,
+          //   "locationProvider": Number,
+          // }]);
 
-        if ( hasData && validData ) {
+        if ( hasData) {
           if(data.length){
+            console.log('received location');
             _.each(data, (location) => {
+              location.device = device;
               Location.insert(location);
             })
           }
@@ -173,7 +187,7 @@ API = {
          //modify driver and set device using email
           const driver = Driver.findOne({device: data.device});
           if(driver){
-            API.utility.response( context, 200, { "status": "received", "message": "Device belongs to another driver!. Please contact admin" } );
+            API.utility.response( context, 403, { error: 403, message: "Device belongs to another driver!. Please contact admin" } );
           } else {
             doc = Driver.findOne({StaffEmail: data.email});
             if(doc){
@@ -194,6 +208,9 @@ API = {
   utility: {
     getApiKey: function(request){
       return request.headers['x-api-key'];
+    },
+    getDeviceId: function(request){
+      return request.headers['x-device-id'];
     },
     getRequestContents: function( request ) {
       switch( request.method ) {
