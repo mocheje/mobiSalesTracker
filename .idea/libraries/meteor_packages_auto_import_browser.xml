@@ -16,6 +16,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/http/1.4.0/web.browser/httpcall_common.js" />
         <item url="file://$USER_HOME$/.meteor/packages/diff-sequence/1.1.0/web.browser/tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/diff-sequence/1.1.0/web.browser/diff.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/peppelg_bootstrap-3-modal/1.0.4/web.browser/main.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/meteorhacks_collection-utils/1.2.0/web.browser/packages/meteorhacks:collection-utils.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/meteorhacks_aggregate/1.3.0/web.browser/packages/meteorhacks_aggregate.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/ejson_tests.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/stringify.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/ejson.js" />
@@ -256,6 +259,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/http/1.4.0/web.browser/httpcall_common.js" />
       <root url="file://$USER_HOME$/.meteor/packages/diff-sequence/1.1.0/web.browser/tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/diff-sequence/1.1.0/web.browser/diff.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/peppelg_bootstrap-3-modal/1.0.4/web.browser/main.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/meteorhacks_collection-utils/1.2.0/web.browser/packages/meteorhacks:collection-utils.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/meteorhacks_aggregate/1.3.0/web.browser/packages/meteorhacks_aggregate.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/ejson_tests.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/stringify.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ejson/1.1.0/web.browser/ejson.js" />

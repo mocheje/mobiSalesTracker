@@ -6,8 +6,8 @@
 Meteor.publish( 'Locations', function(driver){
   check(driver, String);
   const device = Driver.findOne({_id: driver}).device;
-
-  var data = Location.find({device: device},{sort: {time: -1}}, {limit: 10});
+  var latest = Location.findOne({device: device}, {"sort":{"time": -1}}).time;
+  var data = Location.find({device: device, time: latest});
 
   if ( data ) {
     //console.log(data);
@@ -16,3 +16,34 @@ Meteor.publish( 'Locations', function(driver){
 
   return this.ready();
 });
+
+Meteor.publish( 'Locations.period', function(driver,peroid){
+  check(driver, String);
+  check(period, String);
+  const device = Driver.findOne({_id: driver}).device;
+  var latest = Location.findOne({device: device}, {"sort":{"time": -1}}).time;
+  var data = Location.find({device: device, time: latest});
+
+  if ( data ) {
+    //console.log(data);
+    return data;
+  }
+
+  return this.ready();
+});
+
+
+Meteor.publish( 'Locations.all.drivers', function(){
+  // const devices = Driver.find({device: { $ne: "" }},{fields: {device: 1}});
+  // const deviceArr = devices.map( (x) => { return x.device });
+  // console.log(deviceArr);
+  // ReactiveAggregate(this, Location, [
+  //   {$sort: {"time": -1 } },
+  //   {$group: {
+  //     _id: "$device",
+  //     location: { $first: "$$ROOT" }
+  //   }
+  // }]);
+
+});
+

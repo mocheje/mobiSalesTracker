@@ -17,3 +17,8 @@ Router.route('driver', {
   path: '/driver/:_id',
   template: 'mapView'
 });
+
+Router.route('drivers', {
+  path: '/drivers',
+  template: 'generalView'
+});

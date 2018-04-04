@@ -37,5 +37,9 @@ Template.index.helpers({
 Template.index.events({
   'click .employee': function(){
 
+  },
+  'click #newDriver': function(event){
+    event.preventDefault();
+    Modal.show('driverCreate');
   }
 });

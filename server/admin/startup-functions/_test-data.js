@@ -2,7 +2,7 @@ Drivers = [
   {
     "StaffName": "ANISERE MICHAEL",
     "StaffEmail": "mickanish@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -13,7 +13,7 @@ Drivers = [
   {
     "StaffName": "LUKUMAN BALOGUN",
     "StaffEmail": "lukumanvsr@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "APAPA",
@@ -24,7 +24,7 @@ Drivers = [
   {
     "StaffName": "ABDULAHI RAJI (SS)",
     "StaffEmail": "raajab_ab238@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -34,7 +34,7 @@ Drivers = [
   {
     "StaffName": "ADENUGA KEHINDE",
     "StaffEmail": "adenugahussein@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -45,7 +45,7 @@ Drivers = [
   {
     "StaffName": "RAJI ABDULAHI",
     "StaffEmail": "rajab_ab238@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -56,7 +56,7 @@ Drivers = [
   {
     "StaffName": "OLADIGBOLU TAOFIQ",
     "StaffEmail": "taofiq@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Sales Supervisor",
     "Area": "Victoria Island",
@@ -67,7 +67,7 @@ Drivers = [
   {
     "StaffName": "SULAIMON WASIU",
     "StaffEmail": "wesenasco@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -78,7 +78,7 @@ Drivers = [
   {
     "StaffName": "ADENUGA SULAIMON",
     "StaffEmail": "sulaimonadenuga@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -89,7 +89,7 @@ Drivers = [
   {
     "StaffName": "OGUNLETI FELIX OLUWAFEMI",
     "StaffEmail": "ofelixoluwafemi@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -100,7 +100,7 @@ Drivers = [
   {
     "StaffName": "TAIWO OLUWADARE",
     "StaffEmail": "daretaiwo77@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -111,7 +111,7 @@ Drivers = [
   {
     "StaffName": "AGHAHON INOKHONFE VICTOR",
     "StaffEmail": "inovic247@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -122,7 +122,7 @@ Drivers = [
   {
     "StaffName": "Dontee Olarewaju",
     "StaffEmail": "dontee@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -133,7 +133,7 @@ Drivers = [
   {
     "StaffName": "FAMAKINWA MICHAEL",
     "StaffEmail": "famakinwa2000@yahoo.co.uk",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -144,7 +144,7 @@ Drivers = [
   {
     "StaffName": "KOLAWOLE GBOYEGA",
     "StaffEmail": "olaolu012003@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -155,7 +155,7 @@ Drivers = [
   {
     "StaffName": "GODWIN JONATHAN",
     "StaffEmail": "godwinjonathan0@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -166,7 +166,7 @@ Drivers = [
   {
     "StaffName": "OLUSEGUN A. DEBOAJAYI",
     "StaffEmail": "seguntuns@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -177,7 +177,7 @@ Drivers = [
   {
     "StaffName": "ANITA EJIRO I.",
     "StaffEmail": "anitoje@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -188,7 +188,7 @@ Drivers = [
   {
     "StaffName": "OGUNTOYE KAZEEM",
     "StaffEmail": "kasodeval@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -199,7 +199,7 @@ Drivers = [
   {
     "StaffName": "SAMUEL OLUWA BUSUYI",
     "StaffEmail": "holuwasheunharyor@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -210,7 +210,7 @@ Drivers = [
   {
     "StaffName": "AROWOLO JIMOH ISSAC",
     "StaffEmail": "arowoloisaac@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -221,7 +221,7 @@ Drivers = [
   {
     "StaffName": "ANTHONY OLANIYI O.",
     "StaffEmail": "tdspring@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "IKEJA",
@@ -232,7 +232,7 @@ Drivers = [
   {
     "StaffName": "OGUNSHOLA AFEEZ KOLAWOLE",
     "StaffEmail": "ogunshola@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -243,7 +243,7 @@ Drivers = [
   {
     "StaffName": "SAMUEL SALIFU",
     "StaffEmail": "samaduojosalifu@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -254,7 +254,7 @@ Drivers = [
   {
     "StaffName": "ERNEST ANYAIWE",
     "StaffEmail": "justernestguy@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -265,7 +265,7 @@ Drivers = [
   {
     "StaffName": "TIWALADE FATUNGASE",
     "StaffEmail": "tfatungase@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -276,7 +276,7 @@ Drivers = [
   {
     "StaffName": "OLANIYI BENARD",
     "StaffEmail": "olaniyivsr@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -288,7 +288,7 @@ Drivers = [
   {
     "StaffName": "KINGSLEY EMERIBE",
     "StaffEmail": "kingsleyemeribe12345@hotmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -299,7 +299,7 @@ Drivers = [
   {
     "StaffName": "ANTHONY DIBIE",
     "StaffEmail": "toniodibie@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -310,7 +310,7 @@ Drivers = [
   {
     "StaffName": "JUSTICE",
     "StaffEmail": "justice@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "Victoria Island",
@@ -321,7 +321,7 @@ Drivers = [
   {
     "StaffName": "FRANK AMRONAYA",
     "StaffEmail": "frank@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "Victoria Island",
@@ -332,7 +332,7 @@ Drivers = [
   {
     "StaffName": "MCY 01",
     "StaffEmail": "mercy@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -343,7 +343,7 @@ Drivers = [
   {
     "StaffName": "OKONIGA FRIDAY FILANI.",
     "StaffEmail": "oluwafemi.filani@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -354,7 +354,7 @@ Drivers = [
   {
     "StaffName": "CHRIS ANOPUEME",
     "StaffEmail": "chris.anopueme@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -365,7 +365,7 @@ Drivers = [
   {
     "StaffName": "ADETAYO FASEEH OLATUNJI",
     "StaffEmail": "tayovsr@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -378,7 +378,7 @@ Drivers = [
   {
     "StaffName": "OLA SHEU FATIMA O.",
     "StaffEmail": "ennyomor@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -389,7 +389,7 @@ Drivers = [
   {
     "StaffName": "ADEREMI NURUDEEN ADEKUNLE",
     "StaffEmail": "nurudeen@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -400,7 +400,7 @@ Drivers = [
   {
     "StaffName": "KEHINDE FATAI",
     "StaffEmail": "adeyemi@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -411,7 +411,7 @@ Drivers = [
   {
     "StaffName": "PETER A.",
     "StaffEmail": "nastrade21@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -422,7 +422,7 @@ Drivers = [
   {
     "StaffName": "IBRAHIM ADEDAPO OTUBELA",
     "StaffEmail": "nastrade20@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "Victoria Island",
@@ -433,7 +433,7 @@ Drivers = [
   {
     "StaffName": "JN01",
     "StaffEmail": "john@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -444,7 +444,7 @@ Drivers = [
   {
     "StaffName": "KP01",
     "StaffEmail": "kepler@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -455,7 +455,7 @@ Drivers = [
   {
     "StaffName": "LA01",
     "StaffEmail": "lola@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "Victoria Island",
@@ -466,7 +466,7 @@ Drivers = [
   {
     "StaffName": "SH01",
     "StaffEmail": "shina@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -477,7 +477,7 @@ Drivers = [
   {
     "StaffName": "Folorunso Oluwaseun",
     "StaffEmail": "nastrade19@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -488,7 +488,7 @@ Drivers = [
   {
     "StaffName": "ILOBI KELECHI",
     "StaffEmail": "nastrade18@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -499,7 +499,7 @@ Drivers = [
   {
     "StaffName": "Blessing Oliseyenum",
     "StaffEmail": "nastrade17@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -510,7 +510,7 @@ Drivers = [
   {
     "StaffName": "Johnson Oluwaseyi",
     "StaffEmail": "nastrade16@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -521,7 +521,7 @@ Drivers = [
   {
     "StaffName": "Emiola Afolabi",
     "StaffEmail": "nastrade15@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -532,7 +532,7 @@ Drivers = [
   {
     "StaffName": "Amaka Gilbert",
     "StaffEmail": "nastrade14@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -543,7 +543,7 @@ Drivers = [
   {
     "StaffName": "Ohanyerenusa Sanetus",
     "StaffEmail": "nastrade13@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -554,7 +554,7 @@ Drivers = [
   {
     "StaffName": "Peter Ayoriode",
     "StaffEmail": "nastrade12@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -565,7 +565,7 @@ Drivers = [
   {
     "StaffName": "Ariyo Moyinsoluwa",
     "StaffEmail": "nastrade12@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -576,7 +576,7 @@ Drivers = [
   {
     "StaffName": "Odili Veronica",
     "StaffEmail": "nastrade11@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -587,7 +587,7 @@ Drivers = [
   {
     "StaffName": "Olusegun Odunola",
     "StaffEmail": "nastrade10@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -598,7 +598,7 @@ Drivers = [
   {
     "StaffName": "JOSEPH ONAH",
     "StaffEmail": "nastrade09@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -609,7 +609,7 @@ Drivers = [
   {
     "StaffName": "BABATUNDE DOLAPO",
     "StaffEmail": "nastrade08@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -622,7 +622,7 @@ Drivers = [
   {
     "StaffName": "OLUBUNMI OROGUN S.",
     "StaffEmail": "nastarde07@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -633,7 +633,7 @@ Drivers = [
   {
     "StaffName": "ADERIBOLE OLUWASEUN",
     "StaffEmail": "nastrade06@naco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -644,7 +644,7 @@ Drivers = [
   {
     "StaffName": "AREGUAMEN MICHAEL",
     "StaffEmail": "nastrade05@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -655,7 +655,7 @@ Drivers = [
   {
     "StaffName": "AYINDE IDRIS",
     "StaffEmail": "ayindeidris007@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -666,7 +666,7 @@ Drivers = [
   {
     "StaffName": "PAUL EGWUMA",
     "StaffEmail": "egwumapaul@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -677,7 +677,7 @@ Drivers = [
   {
     "StaffName": "OLAJESU SAMUEL ABIODUN",
     "StaffEmail": "olajesu31@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -688,7 +688,7 @@ Drivers = [
   {
     "StaffName": "NASCO 04",
     "StaffEmail": "nastrade04@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "APAPA",
@@ -699,7 +699,7 @@ Drivers = [
   {
     "StaffName": "NASCO 03",
     "StaffEmail": "nastrade03@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "Victoria Island",
@@ -710,7 +710,7 @@ Drivers = [
   {
     "StaffName": "NASCO 02",
     "StaffEmail": "nastrade02@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "IKEJA",
@@ -721,7 +721,7 @@ Drivers = [
   {
     "StaffName": "test run",
     "StaffEmail": "nastrade01@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -732,7 +732,7 @@ Drivers = [
   {
     "StaffName": "Sysadmin",
     "StaffEmail": "nastrade@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "Market Sales Representative",
     "Area": "MUSHIN",
@@ -743,7 +743,7 @@ Drivers = [
   {
     "StaffName": "ANURAG VASHISHTHA",
     "StaffEmail": "anurag@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Zonal Sales Manager",
     "Area": "MUSHIN",
@@ -754,7 +754,7 @@ Drivers = [
   {
     "StaffName": "KINGSLEY UGWUANYI",
     "StaffEmail": "ugwuanyi.kingsley01@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -765,7 +765,7 @@ Drivers = [
   {
     "StaffName": "OBAYOMI JAMES OPEOLUWA",
     "StaffEmail": "obayomijames@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -776,7 +776,7 @@ Drivers = [
   {
     "StaffName": "Rahman Lateef",
     "StaffEmail": "Rhmanlateef@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -787,7 +787,7 @@ Drivers = [
   {
     "StaffName": "Rahman Lateef",
     "StaffEmail": "Rhmanlateef@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -798,7 +798,7 @@ Drivers = [
   {
     "StaffName": "SAMUEL OMOBORIWO SOLOMON",
     "StaffEmail": "sosborimoney@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -809,7 +809,7 @@ Drivers = [
   {
     "StaffName": "SURAYPRAKASH RAO",
     "StaffEmail": "rao@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -820,7 +820,7 @@ Drivers = [
   {
     "StaffName": "ALEN SAMUEL",
     "StaffEmail": "alensamuel@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -831,7 +831,7 @@ Drivers = [
   {
     "StaffName": "SHAKIR A. MOHAMMED",
     "StaffEmail": "shakir@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -842,7 +842,7 @@ Drivers = [
   {
     "StaffName": "RAJEEV SHARMA",
     "StaffEmail": "rajeeve@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Administrator",
     "Area": "MUSHIN",
@@ -853,7 +853,7 @@ Drivers = [
   {
     "StaffName": "FESTUS OKWEYE OLOSUWE",
     "StaffEmail": "olosuwe@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Regional Sales Manager",
     "Area": "MUSHIN",
@@ -864,7 +864,7 @@ Drivers = [
   {
     "StaffName": "OKAREME JIRO JACOB",
     "StaffEmail": "jiarome@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Regional Sales Manager",
     "Area": "MUSHIN",
@@ -875,7 +875,7 @@ Drivers = [
   {
     "StaffName": "Glenn Weller",
     "StaffEmail": "glenn@nasco.net",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "National Sales Manager",
     "Area": "MUSHIN",
@@ -886,7 +886,7 @@ Drivers = [
   {
     "StaffName": "Glenn Weller",
     "StaffEmail": "glenn@nasco.ne",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "National Sales Manager",
     "Area": "MUSHIN",
@@ -897,7 +897,7 @@ Drivers = [
   {
     "StaffName": "GIWA BABATUNDE S.",
     "StaffEmail": "ttundegiwa@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -908,7 +908,7 @@ Drivers = [
   {
     "StaffName": "UGWUMBA MODESTY MODESTUS",
     "StaffEmail": "modestymodestus@yahoo.co.uk",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -919,7 +919,7 @@ Drivers = [
   {
     "StaffName": "ADEBOWALE ADEWALE",
     "StaffEmail": "adefemi43@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "APAPA",
@@ -930,7 +930,7 @@ Drivers = [
   {
     "StaffName": "JOHN OBIEBI",
     "StaffEmail": "johnobiebi@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -941,7 +941,7 @@ Drivers = [
   {
     "StaffName": "HAMZAT ADESINA .M",
     "StaffEmail": "shinopee_100200@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -952,7 +952,7 @@ Drivers = [
   {
     "StaffName": "OKWOALO KEPLER O.",
     "StaffEmail": "okwoalo.kepler@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "MUSHIN",
@@ -963,7 +963,7 @@ Drivers = [
   {
     "StaffName": "DOSUNMU OMOLOA",
     "StaffEmail": "adebayo.omolola2016@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "Sales Supervisor",
     "Area": "Victoria Island",
@@ -974,7 +974,7 @@ Drivers = [
   {
     "StaffName": "OLUKOTUN OLORUNDARE ELISHA",
     "StaffEmail": "olukotunolorundare@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -985,7 +985,7 @@ Drivers = [
   {
     "StaffName": "RAJI AHMAD ADEWALE",
     "StaffEmail": "walezybrigth22@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "APAPA",
@@ -996,7 +996,7 @@ Drivers = [
   {
     "StaffName": "OTUNBA OLAYEMI",
     "StaffEmail": "otunbaolayemi@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1007,7 +1007,7 @@ Drivers = [
   {
     "StaffName": "ODIKAGBUE MICHEAL OKECHUKWU",
     "StaffEmail": "michaelodiks@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1018,7 +1018,7 @@ Drivers = [
   {
     "StaffName": "OKEBIYI OLUWAKAYODE",
     "StaffEmail": "okebiyikayode@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -1029,7 +1029,7 @@ Drivers = [
   {
     "StaffName": "RICHARD OKPA EDET",
     "StaffEmail": "eddyokpa@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1040,7 +1040,7 @@ Drivers = [
   {
     "StaffName": "NSIKAK-ABASI UBON",
     "StaffEmail": "nsikakspeaks@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "APAPA",
@@ -1051,7 +1051,7 @@ Drivers = [
   {
     "StaffName": "BENARD STANLEY ALOZIE",
     "StaffEmail": "hazardhulk2012@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1062,7 +1062,7 @@ Drivers = [
   {
     "StaffName": "AKINWOTU ENENEZER",
     "StaffEmail": "ebe777@gmail.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -1073,7 +1073,7 @@ Drivers = [
   {
     "StaffName": "OGUNSEYIN ADEBAYO TOLA",
     "StaffEmail": "adebayo_tola777@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "IKEJA",
@@ -1084,7 +1084,7 @@ Drivers = [
   {
     "StaffName": "OLADELE ABIODUN",
     "StaffEmail": "oladelebiodun@gmail",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "Victoria Island",
@@ -1095,7 +1095,7 @@ Drivers = [
   {
     "StaffName": "BUSAYO BUDIORE",
     "StaffEmail": "abudiore@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1106,7 +1106,7 @@ Drivers = [
   {
     "StaffName": "OLAOSHEBIKAN RIDWAN",
     "StaffEmail": "olaoshebikanridwan@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1117,7 +1117,7 @@ Drivers = [
   {
     "StaffName": "KALU SUNDAY",
     "StaffEmail": "kalsun14b@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "APAPA",
@@ -1128,7 +1128,7 @@ Drivers = [
   {
     "StaffName": "JEJELOYE KEHINDE OLALEKAN",
     "StaffEmail": "kennyjeje2000@yahoo.com",
-    "device": "Nill",
+    "device": "",
     "Designation": "Operations Officer",
     "Role": "VAN Sales Representative",
     "Area": "MUSHIN",
@@ -1139,7 +1139,7 @@ Drivers = [
   {
     "StaffName": "System Administrator",
     "StaffEmail": "portaladmin@nascosales.com.ng",
-    "device": "S-001",
+    "device": "",
     "Designation": "Administrative Officer",
     "Role": "System Administrator",
     "Area": "",
