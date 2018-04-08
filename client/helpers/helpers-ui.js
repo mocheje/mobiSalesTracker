@@ -13,3 +13,6 @@
 UI.registerHelper('currentRoute', function(route){
   return Session.equals('currentRoute', route) ? 'active' : '';
 });
+UI.registerHelper('indexCount', function(count){
+  return count + 1;
+});

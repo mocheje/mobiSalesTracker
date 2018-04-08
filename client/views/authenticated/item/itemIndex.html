@@ -1,0 +1,34 @@
+<template name="itemIndex">
+  <h1>Items / Inventory <span class="pull-right driver_btn"><button class="btn btn-primary" id="newItem">New Item</button></span></h1>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default">
+      <div class="panel-heading">Item Lists </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item Code </th>
+            <th>description</th>
+            <th>Stock Count</th>
+            <th>Reserved Stock</th>
+            <th>UOM</th>
+            <th> basePrice </th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each items}}
+          <tr>
+            <th scope="row">{{indexCount @index}}</th>
+            <td>{{code}}</td>
+            <td>{{description}}</td>
+            <td><a href="#"> {{CurrentStockCount}} </a></td>
+            <td><a href="#"> {{ReservedStockCount}} </a></td>
+            <td>{{UOM}} </td>
+            <td class="warning">NGN - {{basePrice}} </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

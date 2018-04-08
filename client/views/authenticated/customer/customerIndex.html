@@ -1,0 +1,29 @@
+<template name="customerIndex">
+  <h1>Customers <span class="pull-right driver_btn"><button class="btn btn-primary" id="newCustomer">New Customer</button></span></h1>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default">
+      <div class="panel-heading">Customer Lists </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>name </th>
+            <th>address</th>
+            <th>status</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each customers}}
+          <tr>
+            <th scope="row">{{indexCount @index}}</th>
+            <td>{{name}}</td>
+            <td>{{address}}</td>
+            <td><a href="#"> {{Status}} </a></td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
+

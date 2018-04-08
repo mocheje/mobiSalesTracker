@@ -1,24 +1,32 @@
 <template name="index">
-  <h1>Drivers <span class="pull-right driver_btn"><button class="btn btn-primary" id="newDriver">New Driver</button></span></h1>
+  <h1>Orders <span class="pull-right driver_btn"><button class="btn btn-primary" id="newOrder">New Order</button></span></h1>
   <div class="bs-example" data-example-id="panel-without-body-with-table">
     <div class="panel panel-default">
-      <div class="panel-heading">Driver Lists </div>
+      <div class="panel-heading">Order Lists </div>
       <table class="table">
         <thead>
           <tr>
             <th>#</th>
-            <th>Device ID </th>
-            <th>Driver Name</th>
-            <th>Personnel ID</th>
+            <th>Order Number </th>
+            <th>Customer</th>
+            <th>Order Items</th>
+            <th>quantity</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-        {{#each drivers}}
+        {{#each orders}}
           <tr>
-            <th scope="row">{{@index}}</th>
-            <td>{{device}}</td>
-            <td>{{StaffName}}</td>
-            <td><a href="{{pathFor 'driver'}}"> {{StaffEmail}} </a></td>
+            <th scope="row">{{indexCount @index}}</th>
+            <td>{{number}}</td>
+            <td>{{customerName customer_id}}</td>
+            <td><a href="#"> {{ItemCode order_items}} </a></td>
+            <td><a href="#"> {{getQuantity order_items}} </a></td>
+            <td><a href="#"> {{getTotal order_items}} </a></td>
+            <td>{{formatDate plannedDeliveryDate}}</td>
+            <td class={{className status}}> {{status}}</td>
           </tr>
           {{/each}}
         </tbody>

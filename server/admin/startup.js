@@ -12,4 +12,7 @@ Meteor.startup(function(){
   // Generate Test Accounts
   generateTestAccounts();
 
+  // Generate test data
+  generateTestData();
+
 });

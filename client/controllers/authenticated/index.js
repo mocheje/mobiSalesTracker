@@ -9,7 +9,9 @@
 
 Template.index.onCreated(function(){
   // Code to run when template is created goes here.
-  this.subscribe( "Drivers" );
+  this.subscribe( "orders" );
+  this.subscribe( "customers" );
+  this.subscribe( "items" );
 });
 
 /*
@@ -25,8 +27,50 @@ Template.index.onRendered(function() {
 */
 
 Template.index.helpers({
-  drivers: function(){
-    return Driver.find();
+  orders: function(){
+    return Order.find();
+  },
+  customerName: function(id){
+    const customer = Customer.findOne({_id: id})
+    if(customer){
+      return customer.name;
+    }
+
+  },
+  className: function(status){
+    console.log(status);
+    switch (status) {
+      case "Pending":
+        return 'warning';
+      case "Delivered":
+        return 'success';
+      default:
+        return 'danger';
+    }
+
+  },
+  indexCount: function(count){
+    return count + 1;
+
+  },
+  ItemCode: function(items){
+    const id = items[0]._id;
+    const item = Item.findOne({_id: id});
+    if (id && item) return `${item.code} - ${item.description}`;
+  },
+  getQuantity: function(items){
+    return items[0].quantity;
+
+  },
+  getTotal: function(items){
+    const id = items[0]._id;
+    const quantity = items[0].quantity;
+    const item = Item.findOne({_id: id});
+    if (quantity && item) return +quantity * +item.basePrice;
+
+  },
+  formatDate: function(date){
+    return moment(date).format("MMM Do YY");
   }
 });
 
@@ -35,11 +79,8 @@ Template.index.helpers({
 */
 
 Template.index.events({
-  'click .employee': function(){
-
-  },
-  'click #newDriver': function(event){
+  'click #newOrder': function(event){
     event.preventDefault();
-    Modal.show('driverCreate');
+    Modal.show('orderCreate');
   }
 });

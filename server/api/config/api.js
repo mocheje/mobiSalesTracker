@@ -203,7 +203,24 @@ API = {
           API.utility.response( context, 403, { error: 403, message: "Request payload must contain a valid device and driver as body content." } );
         }
       }
-    }
+    },
+    orders: {
+      GET: function( context, connection ) {
+        // Check to see if our request has any data. If it doesn't, we want to
+        // return all pizzas for the owner. If it does, we want to search for
+        // pizzas matching that query.
+        var hasQuery = API.utility.hasData( connection.data );
+        if ( hasQuery ) {
+          const email = connection.data.email;
+          if(email){
+            const orders = Order.find({asignedTo: email}).fetch();
+            API.utility.response( context, 200, orders );
+          } else {
+            API.utility.response( context, 200, 'Driver not found' );
+          }
+        }
+      }
+    },
   },
   utility: {
     getApiKey: function(request){
