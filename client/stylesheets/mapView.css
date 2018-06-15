@@ -1,9 +1,22 @@
 #map {
-  height: 600px;
+  height: 100vh;
   width: 100%;
 }
 .map-container {
   width: 100%;
   max-width: 100%;
-  height: 500px;
+  height: 100%;
+}
+.datetop{
+  float: right !important;
+}
+.row h1 {
+  margin: 17px;
+}
+.list-group {
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
+  width: 32%;
+  z-index: 30;
 }

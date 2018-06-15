@@ -2,25 +2,45 @@
   <h1>Drivers <span class="pull-right driver_btn"><button class="btn btn-primary" id="newDriver">New Driver</button></span></h1>
   <div class="bs-example" data-example-id="panel-without-body-with-table">
     <div class="panel panel-default">
-      <div class="panel-heading">Driver Lists </div>
+      <div class="panel-heading">
+        <input id="search-box" type="text" placeholder="Who are you looking for? Search with name or Email" class="form-control">
+      </div>
       <table class="table">
         <thead>
-          <tr>
-            <th>#</th>
-            <th>Device ID </th>
-            <th>Driver Name</th>
-            <th>Personnel ID</th>
-          </tr>
+        <tr>
+          <th>#</th>
+          <th>Device ID </th>
+          <th>Driver Name</th>
+          <th>Personnel ID</th>
+        </tr>
         </thead>
         <tbody>
-        {{#each drivers}}
-          <tr>
-            <th scope="row">{{@index}}</th>
-            <td>{{device}}</td>
-            <td>{{StaffName}}</td>
-            <td><a href="{{pathFor 'driver'}}"> {{StaffEmail}} </a></td>
-          </tr>
-          {{/each}}
+        {{#if Template.subscriptionsReady}}
+          {{#if isSearchView}}
+            {{#each getdriverSearch}}
+              <tr>
+                <th scope="row">{{@index}}</th>
+                <td>{{device}}</td>
+                <td>{{StaffName}}</td>
+                <td><a href="{{pathFor 'driver'}}"> {{StaffEmail}} </a></td>
+              </tr>
+            {{/each}}
+          {{else}}
+            {{#each drivers}}
+              <tr>
+                <th scope="row">{{@index}}</th>
+                <td>{{device}}</td>
+                <td>{{StaffName}}</td>
+                <td><a href="{{pathFor 'driver'}}"> {{StaffEmail}} </a></td>
+              </tr>
+            {{/each}}
+          {{/if}}
+
+        {{else}}
+          <div class="col-xs-12">
+            <div class="loading"> Loading ... </div>
+          </div>
+        {{/if}}
         </tbody>
       </table>
     </div>

@@ -1,3 +1,14 @@
+var GoogleMapsAPI = Npm.require('googlemaps');
+var publicConfig = {
+  key: 'AIzaSyBulVtypp7XrQnLH6iyG8cSxsMOf4P3w-c',
+  stagger_time:       1000, // for elevationPath
+  encode_polylines:   false,
+  secure:             true, // use https
+  //proxy:              'http://127.0.0.1:9999' // optional, set a proxy for HTTP requests
+};
+
+var gmAPI = new GoogleMapsAPI(publicConfig);
+
 API = {
   authentication: function( apiKey ) {
     var getUser = APIKeys.findOne( { "key": apiKey }, { fields: { "owner": 1 } } );
@@ -146,11 +157,33 @@ API = {
 
         if ( hasData) {
           if(data.length){
-            console.log('received location');
-            _.each(data, (location) => {
-              location.device = device;
-              Location.insert(location);
-            })
+            let index = 0;
+            next();
+
+            function next() {
+              const location = data[index];
+              let addr = 'Unnamed Address';
+              const reverseGeocodeParams = {
+                "latlng":  `${location.latitude},${location.longitude}`,
+                "result_type":   "street_address"
+              };
+              location.time = new Date(Number(location.time));
+
+              gmAPI.reverseGeocode(reverseGeocodeParams, Meteor.bindEnvironment(function (errs, response) {
+                if (response && response.results[0]) {
+                  addr = response.results[0].formatted_address
+                }
+
+                location.device = device;
+                location.address = addr;
+                console.log(location);
+                Location.insert(location);
+                // Do the next video now we've finished this one
+                if (++index < data.length) {
+                  next();
+                }
+              }))
+            }
           }
           API.utility.response( context, 200, { "status": "received", "message": "Location succesfully sync !" } );
         } else {
@@ -234,4 +267,4 @@ API = {
       return Match.test( data, pattern );
     }
   }
-};
+}

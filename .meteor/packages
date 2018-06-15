@@ -32,3 +32,5 @@ dburles:google-maps
 meteorhacks:aggregate
 reactive-dict
 peppelg:bootstrap-3-modal
+reactive-var
+meteorhacks:search-source

@@ -1,0 +1,55 @@
+<template name="users">
+  <h1>Admin Users <span class="pull-right driver_btn"><button class="btn btn-primary" id="newUser">New Admin User</button></span></h1>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <input id="search-box" type="text" placeholder="Who are you looking for? Search with name or Email" class="form-control">
+      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th> # </th>
+          <th> Email </th>
+          <th> Username </th>
+          <th> Actions </th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#if Template.subscriptionsReady}}
+          {{#if isSearchView}}
+            {{#each getuserSearch}}
+              <tr>
+                <th scope="row">{{@index}}</th>
+                <td> {{ address emails }} </td>
+                <td> {{profile.name}} </td>
+                <td>
+                  <a href="#" id="{{_id}}" class="deleteUser">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a> </td>
+              </tr>
+            {{/each}}
+          {{else}}
+            {{#each users}}
+              <tr>
+                <th scope="row">{{@index}}</th>
+                <td> {{ address emails}} </td>
+                <td> {{profile.name}} </td>
+                <td>
+                  <a href="#" id="{{_id}}" class="deleteUser">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a>
+                </td>
+              </tr>
+            {{/each}}
+          {{/if}}
+
+        {{else}}
+          <div class="col-xs-12">
+            <div class="loading"> Loading ... </div>
+          </div>
+        {{/if}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

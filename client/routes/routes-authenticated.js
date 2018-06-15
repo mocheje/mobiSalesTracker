@@ -22,3 +22,8 @@ Router.route('drivers', {
   path: '/drivers',
   template: 'generalView'
 });
+
+Router.route('users', {
+  path: '/users',
+  template: 'users'
+});

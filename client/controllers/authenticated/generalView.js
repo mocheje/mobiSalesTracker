@@ -37,38 +37,31 @@ Template.generalView.onRendered(function() {
     locations = self.dict.get("locationData");
 
     if(locations) {
-     var fnMarker = function(obj, index) {
+      var fnMarker = function(obj, index) {
         const location = obj.location;
-        const geocoder = new google.maps.Geocoder;
         const infowindow = new google.maps.InfoWindow;
 
+        const driver = Driver.findOne({device: location.device});
+        if(driver){
+          const staffName = driver.StaffName || "Driver";
+          const time = moment(location.time) || "";
+          const email = driver.StaffEmail || "";
+          const deviceID = driver.device || "";
+          const desig = driver.Designation || "";
+          const area = driver.Area || "";
+          const lga = driver.LGA || "";
 
-        geocoder.geocode({'location': {lat: location.latitude, lng: location.longitude}}, function(results, status) {
-          const driver = Driver.findOne({device: location.device});
-          if(driver){
-            let addr = 'Unnammed Address'
-            if (results && results[0]) {
-              addr = results[0].formatted_address
-            }
-            const staffName = driver.StaffName || "Driver";
-            const time = moment(location.time) || "";
-            const email = driver.StaffEmail || "";
-            const deviceID = driver.device || "";
-            const desig = driver.Designation || "";
-            const area = driver.Area || "";
-            const lga = driver.LGA || "";
+          map.setZoom(11);
+          const marker = new google.maps.Marker({
+            position: {lat: location.latitude, lng: location.longitude},
+            map: map,
+            title: staffName,
+          });
 
-            map.setZoom(11);
-            const marker = new google.maps.Marker({
-              position: {lat: location.latitude, lng: location.longitude},
-              map: map,
-              title: staffName,
-            });
-
-            const contentString = `<div id="content">
+          const contentString = `<div id="content">
               <div id="siteNotice">
               </div>
-              <h1 id="firstHeading" class="firstHeading">${addr}</h1>
+              <h1 id="firstHeading" class="firstHeading">${location.address}</h1>
               <div id="bodyContent">
                 <p><b>${staffName}</b>, @ ${time} .</p>
                 <p> Email : ${email}</p>
@@ -77,17 +70,15 @@ Template.generalView.onRendered(function() {
                 <p>Assinged Area / LGA :${area} / ${lga}</p>
               </div>
             </div>`;
-            infowindow.setContent(contentString);
+          infowindow.setContent(contentString);
 
-            marker.addListener('click', function () {
-              infowindow.open(map, marker);
-            });
-            map.setCenter(marker.getPosition());
-            allMarkers = allMarkers.concat(marker)
-            return procMarker(index);
-          }
-
-        })
+          marker.addListener('click', function () {
+            infowindow.open(map, marker);
+          });
+          map.setCenter(marker.getPosition());
+          allMarkers = allMarkers.concat(marker)
+          return procMarker(index);
+        }
       };
 
       var procMarker = function(index) {
