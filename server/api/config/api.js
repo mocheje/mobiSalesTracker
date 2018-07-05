@@ -220,16 +220,20 @@ API = {
          //modify driver and set device using email
           const driver = Driver.findOne({device: data.device});
           if(driver){
-            API.utility.response( context, 403, { error: 403, message: "Device belongs to another driver!. Please contact admin" } );
+            //deassociate device and assign to new driver
+            driver.update({_id: driver._id},{$set: {device: `${driver.device}_old`}});
+            //update all locations from previous driver
+            location.update({device: data.device}, {$set: {device: `${data.device}_old`}});
+
+            //API.utility.response( context, 403, { error: 403, message: "Device belongs to another driver!. Please contact admin" } );
+          }
+          doc = Driver.findOne({StaffEmail: data.email});
+          if(doc){
+            doc.device = data.device;
+            const response = Driver.update({StaffEmail: data.email}, doc);
+            API.utility.response( context, 200, { "status": "received", response } );
           } else {
-            doc = Driver.findOne({StaffEmail: data.email});
-            if(doc){
-              doc.device = data.device;
-              const response = Driver.update({StaffEmail: data.email}, doc);
-              API.utility.response( context, 200, { "status": "received", response } );
-            } else {
-              API.utility.response( context, 403, { error: 403, message: "Driver not found. Please contact admin" } );
-            }
+            API.utility.response( context, 403, { error: 403, message: "Driver not found. Please contact admin" } );
           }
 
         } else {
