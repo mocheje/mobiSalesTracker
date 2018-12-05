@@ -1,6 +1,6 @@
 var GoogleMapsAPI = Npm.require('googlemaps');
 var publicConfig = {
-  key: 'AIzaSyBulVtypp7XrQnLH6iyG8cSxsMOf4P3w-c',
+  key: 'AIzaSyAGW3Jy6eNuYL6UKGoEF88H1FSK20X_740',
   stagger_time:       1000, // for elevationPath
   encode_polylines:   false,
   secure:             true, // use https
